@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #020617;
+    color: #e5e7eb;
+}
+
+.page-header {
+    background: radial-gradient(circle at top left, #38bdf8 0, #020617 60%);
+    padding: 24px 16px 18px;
+    text-align: center;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.5);
+}
+
+.page-header h1 {
+    margin: 0 0 6px;
+    font-size: 1.9rem;
+}
+
+.subtitle {
+    margin: 0 auto;
+    max-width: 720px;
+    color: #cbd5f5;
+}
+
+.container {
+    max-width: 960px;
+    margin: 18px auto 32px;
+    padding: 0 16px 16px;
+}
+
+.block {
+    background: rgba(15, 23, 42, 0.96);
+    border-radius: 12px;
+    padding: 16px 18px 18px;
+    margin-bottom: 18px;
+    border: 1px solid rgba(148, 163, 184, 0.6);
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.9);
+}
+
+.block h2 {
+    margin-top: 0;
+    margin-bottom: 6px;
+    font-size: 1.25rem;
+    border-bottom: 2px solid rgba(56, 189, 248, 0.5);
+    padding-bottom: 4px;
+}
+
+.block p {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #d1d5db;
+}
+
+.media-video {
+    width: 100%;
+    max-height: 360px;
+    border-radius: 10px;
+    border: 1px solid rgba(148, 163, 184, 0.7);
+}
+
+.iframe-wrapper {
+    margin-top: 8px;
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid rgba(148, 163, 184, 0.7);
+}
+
+.iframe-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+audio {
+    width: 100%;
+    margin-top: 6px;
+}
+
+.image-map {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid rgba(148, 163, 184, 0.7);
+    margin-top: 8px;
+}
+
+#demo-canvas {
+    display: block;
+    max-width: 100%;
+    border-radius: 10px;
+    border: 1px solid rgba(148, 163, 184, 0.7);
+    margin-top: 8px;
+}
+
+.demo-svg {
+    width: 100%;
+    max-width: 420px;
+    display: block;
+    margin-top: 8px;
+    border-radius: 10px;
+    border: 1px solid rgba(148, 163, 184, 0.7);
+    background: #020617;
+}
+
+.bg-video {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(148, 163, 184, 0.7);
+}
+
+.bg-video__media {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}
+
+.bg-video__overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(
+        to bottom,
+        rgba(15, 23, 42, 0.1),
+        rgba(15, 23, 42, 0.85)
+    );
+}
+
+.bg-video__overlay h3 {
+    margin: 0 0 6px;
+}
+
+.bg-video__overlay p {
+    margin: 0;
+    max-width: 420px;
+}
+
+

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <title>Мультимедіа в HTML5</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header class="page-header">
+        <h1>Мультимедіа в HTML5</h1>
+        <p class="subtitle">
+            Приклади вставки відео, аудіо, карт, зображень з областями, canvas, SVG та фонового відео.
+        </p>
+    </header>
+
+    <main class="container">
+        <section class="block" id="bg-video">
+            <h2>1. Фонове відео</h2>
+            <p>Блок із напівпрозорим фоном поверх відео.</p>
+            <div class="bg-video">
+                <video class="bg-video__media" src="video.mp4" autoplay loop muted playsinline></video>
+                <div class="bg-video__overlay">
+                    <h3>Фонове відео в HTML5</h3>
+                    <p>Використання відео як декоративного фону для блоку з текстом.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="block" id="video">
+            <h2>2. Відео за допомогою тега &lt;video&gt;</h2>
+            <p>Приклад локального відеофайлу з керуванням відтворенням.</p>
+            <video class="media-video" src="video.mp4" controls></video>
+        </section>
+
+        <section class="block" id="iframe-video">
+            <h2>3. Відео через &lt;iframe&gt; (YouTube)</h2>
+            <p>Вставка відео з YouTube за допомогою iframe.</p>
+            <div class="iframe-wrapper">
+                <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/UV0mhY2Dxr0"
+                    frameborder="0"
+                    allowfullscreen
+                ></iframe>
+            </div>
+        </section>
+
+        <section class="block" id="audio">
+            <h2>4. Звук за допомогою &lt;audio&gt;</h2>
+            <p>Приклад відтворення локального аудіофайлу.</p>
+            <audio src="audio.mp3" controls></audio>
+        </section>
+
+        <section class="block" id="map">
+            <h2>5. Карта через &lt;iframe&gt;</h2>
+            <p>Приклад вставки карти в сторінку.</p>
+            <div class="iframe-wrapper">
+                <iframe
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=30.30%2C50.40%2C30.60%2C50.50&amp;layer=mapnik"
+                    title="Карта"
+                    frameborder="0"
+                ></iframe>
+            </div>
+        </section>
+
+        <section class="block" id="image-map">
+            <h2>6. Зображення з клікабельними областями (&lt;map&gt; і &lt;area&gt;)</h2>
+            <p>Деякі частини зображення працюють як окремі посилання.</p>
+            <img src="image-map.png" alt="Приклад зображення з областями" usemap="#demo-map" class="image-map" />
+            <map name="demo-map">
+                <area shape="rect" coords="0,0,200,200" href="#bg-video" alt="Фонове відео" />
+                <area shape="rect" coords="200,0,400,200" href="#audio" alt="Аудіо" />
+                <area shape="rect" coords="400,0,800,200" href="#canvas" alt="Canvas" />
+            </map>
+        </section>
+
+        <section class="block" id="canvas">
+            <h2>7. Canvas з JavaScript</h2>
+            <p>Простий малюнок на canvas за допомогою JavaScript.</p>
+            <canvas id="demo-canvas" width="420" height="160"></canvas>
+        </section>
+
+        <section class="block" id="svg">
+            <h2>8. SVG‑графіка</h2>
+            <p>Векторний приклад з фігурами та текстом.</p>
+            <svg class="demo-svg" viewBox="0 0 300 120">
+                <defs>
+                    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#38bdf8;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <rect x="10" y="20" width="280" height="80" rx="16" fill="url(#grad)" />
+                <circle cx="60" cy="60" r="22" fill="#0f172a" />
+                <text x="110" y="68" fill="#0f172a" font-size="20" font-weight="600">
+                    SVG Multimedia
+                </text>
+            </svg>
+        </section>
+
+    </main>
+
+    <script>
+        const canvas = document.getElementById("demo-canvas");
+        if (canvas && canvas.getContext) {
+            const ctx = canvas.getContext("2d");
+            ctx.fillStyle = "#0f172a";
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            ctx.fillStyle = "#38bdf8";
+            ctx.fillRect(20, 30, 120, 60);
+
+            ctx.fillStyle = "#22c55e";
+            ctx.beginPath();
+            ctx.arc(230, 60, 30, 0, Math.PI * 2);
+            ctx.fill();
+
+            ctx.fillStyle = "#e5e7eb";
+            ctx.font = "16px system-ui, sans-serif";
+            ctx.fillText("Canvas demo", 140, 120);
+        }
+    </script>
+</body>
+</html>
+
+
