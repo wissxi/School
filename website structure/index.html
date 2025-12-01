@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <title>Структура сайту — приклад з HTML5 блоками</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="site-header__inner">
+            <h1>Структура сайту з HTML5‑блоків</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#intro">Вступ</a></li>
+                    <li><a href="#importance">Чому заголовки важливі</a></li>
+                    <li><a href="#structure">Структура документа</a></li>
+                    <li><a href="#images">Робота із зображеннями</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="layout">
+        <aside class="layout__aside">
+            <nav class="side-nav">
+                <h2>Зміст</h2>
+                <ul>
+                    <li><a href="#intro">1. Вступ</a></li>
+                    <li><a href="#importance">2. Чому заголовки важливі</a></li>
+                    <li><a href="#structure">3. Структура документа</a></li>
+                    <li><a href="#images">4. Робота із зображеннями</a></li>
+                    <li><a href="#links">5. Посилання</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="layout__main" id="top">
+            <section id="intro">
+                <header>
+                    <h2>1. Вступ</h2>
+                </header>
+                <article>
+                    <p>
+                        Заголовки визначаються тегами <code>&lt;h1&gt;</code> ... <code>&lt;h6&gt;</code>.
+                        Тег <code>&lt;h1&gt;</code> відповідає за головний заголовок сторінки, а
+                        <code>&lt;h6&gt;</code> — за найменш важливий підзаголовок. Заголовки допомагають
+                        розбити великий текст на логічні частини і полегшують читання.
+                    </p>
+                    <p>
+                        Використовуйте HTML‑заголовки <strong>лише</strong> для позначення структури тексту.
+                        Робити текст більшим або жирним краще за допомогою CSS‑властивостей
+                        <code>font-size</code> та <code>font-weight</code>, а не додаткових заголовків.
+                    </p>
+                </article>
+            </section>
+
+            <section id="importance">
+                <header>
+                    <h2>2. Чому заголовки важливі</h2>
+                </header>
+                <article>
+                    <p>
+                        Пошукові системи використовують заголовки, щоб зрозуміти структуру вашого документа.
+                        Коректна ієрархія <code>h1</code>–<code>h3</code> покращує SEO та робить сторінку
+                        зручнішою для користувача.
+                    </p>
+                    <p>
+                        Коли відвідувач відкриває сторінку з великим текстом, він часто спочатку
+                        переглядає заголовки. Якщо вони чітко описують зміст розділів, знайти потрібну
+                        інформацію значно простіше.
+                    </p>
+                    <p class="note">
+                        На цій сторінці заголовки та навігація оформлені за допомогою семантичних тегів
+                        <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>,
+                        <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code> та <code>&lt;footer&gt;</code>.
+                    </p>
+                </article>
+            </section>
+
+            <section id="structure">
+                <header>
+                    <h2>3. Структура документа</h2>
+                </header>
+                <article>
+                    <h3>3.1. Ієрархія заголовків</h3>
+                    <p>
+                        Зазвичай на сторінці використовується один заголовок рівня <strong>h1</strong> —
+                        назва всього документа. Далі йдуть розділи з заголовками <strong>h2</strong>, а
+                        підрозділи позначаються <strong>h3</strong> і нижче.
+                    </p>
+                    <ul>
+                        <li><strong>h1</strong> — тема сторінки</li>
+                        <li><strong>h2</strong> — основні розділи</li>
+                        <li><strong>h3</strong> — підрозділи всередині розділів</li>
+                    </ul>
+
+                    <h3>3.2. Великий текст</h3>
+                    <p class="long-text">
+                        Для великих обсягів тексту важливо не тільки правильно розмістити заголовки, а й
+                        використовувати абзаци, списки, виділення та цитати. Це робить сторінку більш
+                        читабельною. Добре структурований текст легше сприймати навіть на великих екранах
+                        і зручніше переглядати на мобільних пристроях.
+                    </p>
+                    <p class="back-to-top">
+                        <a href="#top">Повернутися нагору</a>
+                    </p>
+                </article>
+            </section>
+
+            <section id="images">
+                <header>
+                    <h2>4. Робота із зображеннями</h2>
+                </header>
+                <article>
+                    <h3>4.1. Звичайне зображення у тексті</h3>
+                    <p>
+                        Зображення вставляють за допомогою тегу <code>&lt;img&gt;</code>. Нижче показано
+                        приклад ілюстрації поряд із текстом.
+                    </p>
+                    <p>
+                        <img
+                            src="https://via.placeholder.com/260x120?text=Headings"
+                            alt="Приклад зображення із заголовками"
+                            class="inline-image"
+                        />
+                        Картинка доповнює текст і допомагає візуально пояснити структуру сторінки.
+                        Важливо вказувати змістовний атрибут <code>alt</code>, щоб сторінка була доступною
+                        для всіх користувачів.
+                    </p>
+
+                    <h3>4.2. Зображення з підписом</h3>
+                    <figure class="image-figure">
+                        <img
+                            src="https://via.placeholder.com/640x200?text=Structure+of+Document"
+                            alt="Схема структури документа з заголовками"
+                        />
+                        <figcaption>
+                            Рис. 1. Схема структури HTML‑документа з заголовками різних рівнів.
+                        </figcaption>
+                    </figure>
+                </article>
+            </section>
+
+            <section id="links">
+                <header>
+                    <h2>5. Посилання</h2>
+                </header>
+                <article>
+                    <p>
+                        У великих документах корисно додавати як <strong>якірні посилання</strong> в межах
+                        сторінки, так і посилання на окремі матеріали. У цьому прикладі навігація вгорі та
+                        збоку сторінки побудована саме на таких посиланнях.
+                    </p>
+                    <p class="back-to-top">
+                        <a href="#top">Повернутися нагору</a>
+                    </p>
+                </article>
+            </section>
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <p>Приклад структури сайту з використанням семантичних тегів HTML5.</p>
+    </footer>
+</body>
+</html>
+
+
