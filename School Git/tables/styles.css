@@ -1,0 +1,88 @@
+/* Базове оформлення сторінки */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.info {
+    max-width: 900px;
+    margin: 20px auto;
+    background: #ffffff;
+    border-radius: 6px;
+    padding: 16px 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Таблиця */
+.demo-table {
+    width: 70%;
+    margin: 0 auto;
+
+    /* рамка навколо всієї таблиці */
+    border: 3px solid orange;
+
+    /* об'єднати рамки комірок */
+    border-collapse: collapse;
+
+    /* загальний фон таблиці */
+    background-color: #fffaf0;
+}
+
+.demo-table caption {
+    caption-side: top;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 8px;
+}
+
+.demo-table th,
+.demo-table td {
+    /* рамки для всіх комірок */
+    border: 1px solid orange;
+
+    /* внутрішні відступи */
+    padding: 7px;
+}
+
+.demo-table thead th {
+    background-color: #ffe0b2;
+    height: 50px; /* приклад фіксованої висоти */
+    text-align: center; /* вирівнювання по горизонталі */
+}
+
+.demo-table tbody td {
+    text-align: left; /* звичайні комірки по лівому краю */
+    vertical-align: top; /* вертикальне вирівнювання зверху */
+}
+
+.demo-table tfoot td {
+    text-align: center;
+    font-style: italic;
+    background-color: #ffe0b2;
+}
+
+/* «Зебра» — різний фон для парних рядків */
+.demo-table tbody tr:nth-child(even) {
+    background-color: #fff3e0;
+}
+
+/* Зміна фону при наведенні курсору */
+.demo-table tbody tr:hover {
+    background-color: #ffd180;
+}
+
+/* Приклад відступів навколо таблиці */
+.demo-table {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+

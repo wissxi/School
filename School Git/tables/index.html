@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <title>Таблиці за допомогою CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <h1>Таблиці за допомогою CSS</h1>
+
+    <p>
+        На цій сторінці показано приклад форматування таблиці за допомогою CSS:
+        рамки, відступи, фон, вирівнювання тексту, «зебра»-рядки та зміна фону при наведенні.
+    </p>
+
+    <table class="demo-table">
+        <caption>Розклад занять (приклад)</caption>
+        <thead>
+            <tr>
+                <th>День</th>
+                <th>Пара</th>
+                <th>Дисципліна</th>
+                <th>Аудиторія</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Понеділок</td>
+                <td>1</td>
+                <td>Основи WEB-дизайну</td>
+                <td>101</td>
+            </tr>
+            <tr>
+                <td>Понеділок</td>
+                <td>2</td>
+                <td>Комп'ютерні мережі</td>
+                <td>203</td>
+            </tr>
+            <tr>
+                <td>Вівторок</td>
+                <td>1</td>
+                <td>Програмування</td>
+                <td>305</td>
+            </tr>
+            <tr>
+                <td>Середа</td>
+                <td>3</td>
+                <td>Бази даних</td>
+                <td>210</td>
+            </tr>
+            <tr>
+                <td>Четвер</td>
+                <td>2</td>
+                <td>Основи WEB-дизайну (практика)</td>
+                <td>102</td>
+            </tr>
+            <tr>
+                <td>Пʼятниця</td>
+                <td>1</td>
+                <td>Інформатика</td>
+                <td>110</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Приклад оформлення таблиці за допомогою CSS</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <section class="info">
+        <h2>Що тут використано з CSS</h2>
+        <ul>
+            <li>Рамки для таблиці та комірок (`border`)</li>
+            <li>Об'єднання рамок (`border-collapse: collapse`)</li>
+            <li>Внутрішні відступи комірок (`padding`)</li>
+            <li>Фон таблиці та комірок (`background-color`)</li>
+            <li>Фіксована висота заголовків (`height` для `th`)</li>
+            <li>Вирівнювання тексту по горизонталі (`text-align`)</li>
+            <li>Вирівнювання по вертикалі (`vertical-align`)</li>
+            <li>Чергуються рядки («зебра») через псевдоклас `:nth-child(even)`</li>
+            <li>Зміна фону рядка при наведенні (`tr:hover`)</li>
+            <li>Зміна відстані між рамкою таблиці і вмістом сторінки (`margin`)</li>
+        </ul>
+    </section>
+</body>
+</html>
+
+
