@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <title>Приклади блоків у CSS</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header class="page-header">
+        <h1>Використання блоків у CSS</h1>
+        <p class="subtitle">
+            Кілька прикладів блоків з рамками, фонами та вкладенням один в один. Текст у кожному блоці
+            розташовано по центру.
+        </p>
+    </header>
+
+    <main class="container">
+        <section class="example">
+            <h2>1. Прості блоки в один ряд</h2>
+            <div class="row">
+                <div class="box box--blue">Блок 1</div>
+                <div class="box box--green">Блок 2</div>
+                <div class="box box--orange">Блок 3</div>
+            </div>
+        </section>
+
+        <section class="example">
+            <h2>2. Вкладені блоки</h2>
+            <div class="outer-block">
+                <div class="inner-block">
+                    Внутрішній блок
+                </div>
+            </div>
+        </section>
+
+        <section class="example">
+            <h2>3. Схема сторінки з блоків</h2>
+            <div class="layout">
+                <div class="layout__header">Шапка сайту</div>
+                <div class="layout__body">
+                    <div class="layout__sidebar">Бокове меню</div>
+                    <div class="layout__content">Основний вміст</div>
+                </div>
+                <div class="layout__footer">Підвал</div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
+
+

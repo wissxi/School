@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Темний фон + спільний стиль, як на інших сторінках */
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #020617;
+    color: #e5e7eb;
+}
+
+.page-header {
+    background: radial-gradient(circle at top left, #38bdf8 0, #020617 60%);
+    padding: 24px 16px 18px;
+    text-align: center;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.4);
+}
+
+.page-header h1 {
+    margin: 0 0 6px;
+    font-size: 1.9rem;
+}
+
+.subtitle {
+    margin: 0 auto;
+    max-width: 720px;
+    color: #cbd5f5;
+}
+
+.container {
+    max-width: 960px;
+    margin: 18px auto 32px;
+    padding: 0 16px 16px;
+}
+
+.info {
+    margin: 18px auto 0;
+    background: rgba(15, 23, 42, 0.96);
+    border-radius: 10px;
+    padding: 14px 18px 16px;
+    border: 1px solid rgba(148, 163, 184, 0.6);
+    box-shadow: 0 10px 26px rgba(15, 23, 42, 0.9);
+}
+
+.info h2 {
+    margin-top: 0;
+    margin-bottom: 6px;
+    font-size: 1.1rem;
+}
+
+.info ul {
+    margin: 6px 0 0;
+    padding-left: 18px;
+}
+
+.info li {
+    margin-bottom: 3px;
+}
+
+code {
+    font-family: "Fira Code", Consolas, monospace;
+    font-size: 0.9rem;
+    background: rgba(15, 23, 42, 0.9);
+    padding: 1px 4px;
+    border-radius: 3px;
+}
+
+/* Таблиця */
+.demo-table {
+    width: 100%;
+    margin: 10px auto 0;
+    border: 2px solid #f97316;
+    border-collapse: collapse;
+    background-color: #0f172a;
+}
+
+.demo-table caption {
+    caption-side: top;
+    font-weight: 600;
+    font-size: 1.05rem;
+    padding: 8px;
+    color: #fed7aa;
+}
+
+.demo-table th,
+.demo-table td {
+    border: 1px solid rgba(248, 171, 84, 0.9);
+    padding: 7px;
+}
+
+.demo-table thead th {
+    background-color: rgba(248, 171, 84, 0.2);
+    height: 48px;
+    text-align: center;
+}
+
+.demo-table tbody td {
+    text-align: left;
+    vertical-align: top;
+}
+
+.demo-table tfoot td {
+    text-align: center;
+    font-style: italic;
+    background-color: rgba(248, 171, 84, 0.2);
+}
+
+.demo-table tbody tr:nth-child(even) {
+    background-color: rgba(248, 171, 84, 0.08);
+}
+
+.demo-table tbody tr:hover {
+    background-color: rgba(248, 171, 84, 0.18);
+}
+
+
